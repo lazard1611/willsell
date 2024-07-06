@@ -1,4 +1,4 @@
-import styles from './footer.module.css'; 
+import styles from './footer.module.css';
 
 const Footer = () => {
     return (
@@ -6,44 +6,62 @@ const Footer = () => {
             <div className="container">
                 <div className={styles.footerRow}>
                     <div className={styles.footerColumn}>
-                        <div className={styles.footerText}>Poland, Wroclaw, 50-381 </div>
-                        <div className={styles.footerText}>Marie Curie-Sklodowska 12 </div>                     
+                        <ul className={styles.footerList}>
+                            <li className={styles.footerItem}>
+                                <div className={styles.footerText}>Poland, Wroclaw, 50-381 </div>
+                            </li>
+                            <li className={styles.footerItem}>
+                                <div className={styles.footerText}>Marie Curie-Sklodowska 12 </div>
+                            </li>
+                        </ul>
+                        <ul className={styles.footerList}>
+                            <li className={styles.footerItem}>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.footerLink}
+                                >
+                                    <div className={styles.footerText}>your@willsell.agency</div>
+                                </a>
+                            </li>
+
+                            <li className={styles.footerItem}>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.footerLink}
+                                >
+                                    <div className={styles.footerText}>+48 696 385 345</div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div className={styles.footerColumn}>
-                        <a
-                            href="#"            
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                                <div className={styles.footerText}>your@willsell.agency</div>
-                        </a>
-                        <a
-                            href="#"            
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                                <div className={styles.footerText}>+48 696 385 345</div>  
-                        </a>                
-                    </div>
+
                     <div className={styles.footerSocial}>
-                        <a
-                        href="#"            
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            <div className={styles.footerText}>facebook</div>
-                        </a>
-                        <a
-                            href="#"            
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <div className={styles.footerSocialWrap}>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.footerSocialLink}
                             >
-                            <div className={styles.footerText}>instagram</div>  
-                        </a>                   
+                                <div className={styles.footerText}>facebook</div>
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.footerSocialLink}
+                            >
+                                <div className={styles.footerText}>instagram</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </footer>
     )
 }

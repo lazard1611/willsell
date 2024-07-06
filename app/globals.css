@@ -1,6 +1,8 @@
 :root {
-  --blue: #26C6F8;
-  --blue_2: #B6E0FF;  
+    --gl-indent: 3rem;
+
+    --blue: #26C6F8;
+    --blue_2: #B6E0FF;
 }
 
 
@@ -21,17 +23,36 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   height: 100%;
+
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: calc(100vw / 1440 * 10);
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 375px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    html {
+        font-size: calc(100vw / 374 * 10);
+    }
 }
 
 body {
 	position: relative;
-  margin: 0;
+    margin: 0;
 
-	display: flex;	
+	display: flex;
 
-	font-size: 16px;
+	font-size: 1.6rem;
 	color: #000;
   font-family: 'Vinnytsia';
 
@@ -39,35 +60,25 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	background: var(--blue_2);
-
-	@supports (display: grid) {
-		display: block;
-	}
+	background-color: var(--blue_2);
 }
 
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 550px;
-  height: 100%;
-  background-color: var(--blue);
-  opacity: .3;
+body::after,
+body::before {
+    content: "";
+    position: absolute;
+    background-color: var(--blue);
+    opacity: .3;
+    pointer-events: none;
 }
 
 body::before {
-  content: "";
-  position: absolute;
-  top: -465px;
-  left: 0;
-  width: 400px;
-  height: 100%;
-  transform: rotate(42.3deg);
-  background-color: var(--blue);
-  opacity: .3;
+    left: 0;
+    width: 30rem;
+    height: 90rem;
+    transform: rotate(42.3deg);
 }
+
 
 .wrapper {
 	position: relative;
@@ -84,14 +95,37 @@ body::before {
 .main {
 	width: 100%;
 	position: relative;
-	padding: var(--height-header) 0 0;
+	/*padding: var(--height-header) 0 0;*/
 
 	flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 119.8rem;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    body::after {
+        top: 0;
+        right: 0;
+        width: 28%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body::before {
+        top: -39rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    body::before {
+        top: -55.6rem;
+    }
 }
 

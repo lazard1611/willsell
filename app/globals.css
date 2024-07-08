@@ -3,6 +3,7 @@
 
     --blue: #26C6F8;
     --blue_2: #B6E0FF;
+    --height-header: 12rem;
 }
 
 
@@ -48,9 +49,7 @@ body {
 
 body {
 	position: relative;
-    margin: 0;
-
-	display: flex;
+  margin: 0;	
 
 	font-size: 1.6rem;
 	color: #000;
@@ -86,7 +85,7 @@ body::before {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;
+	min-height: calc(100% - var(--height-header));
 	height: auto !important;
 
 	overflow-x: hidden;
@@ -94,12 +93,11 @@ body::before {
 
 .main {
 	width: 100%;
-	position: relative;
-	/*padding: var(--height-header) 0 0;*/
+	position: relative;	
 
 	flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -109,6 +107,10 @@ body::before {
 }
 
 @media screen and (min-width: 768px) {
+    body {
+      display: flex;
+    }
+
     body::after {
         top: 0;
         right: 0;

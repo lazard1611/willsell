@@ -22,12 +22,12 @@
 .footerLink,
 .footerSocialLink {
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .footerSocialLink:hover,
 .footerLink:hover {
-    color: var(--blue);
+    opacity: 0.5;
 }
 
 .footerSocialWrap {}

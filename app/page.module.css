@@ -41,7 +41,7 @@
   }
 
   .decorWrap {
-    width: 46%;
+    /* width: 46%; */    
     height: 70vh;
     top: 6%;
     right: -1%;
@@ -53,10 +53,7 @@
     align-items: flex-end;
   }
 
-  .content {
-    padding-top: 13.8rem;
-    width: 54%;
-  }
+  
 
   .title:not(:last-child) {
     margin-bottom: 2.6rem;
@@ -83,7 +80,28 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .content {
+    padding-top: 13.8rem;    
+    width: 45%;
+  }
+
+  .decorWrap {
+    width: 55%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  .content {
+    padding-top: 13.8rem;
+    /* width: 54%; */
+    width: 51%;
+  }
+
+  .decorWrap {
+    width: 49%;
+  }
+
   .title {
     font-size: 5rem;
     line-height: 1;

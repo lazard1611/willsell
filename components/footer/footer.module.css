@@ -7,9 +7,6 @@
 
 }
 
-.footerList:not(:first-child) {
-    padding-left: 6.4%;
-}
 
 .footerItem {
     list-style: none;
@@ -42,6 +39,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .footer {
+        padding: 9.6rem var(--gl-indent) 2.6rem;
+    }
+
     .footerRow {
         display: flex;
     }
@@ -52,19 +53,19 @@
     }
 
     .footerSocial {
-        width: 19.5%;
+        width: 21%;
     }
 
     .footerText {
         font-size: 1.6rem;
     }
 
-    .footer {
-        padding: 9.4rem var(--gl-indent) 2rem;
+    .footerList:not(:first-child) {
+        padding-left: 5.8rem;
     }
 
     .footerItem:not(:last-child) {
-        margin-bottom: 2.8rem;
+        margin-bottom: 2.2rem;
     }
 
     .footerSocialLink:not(:last-child) {
@@ -108,6 +109,10 @@
 
     .footerText {
         font-size: 1.2rem;
+    }
+
+    .footerList:not(:first-child) {
+        padding-left: 1.8rem;
     }
 
     .footerItem:not(:last-child) {

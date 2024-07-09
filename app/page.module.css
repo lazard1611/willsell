@@ -1,10 +1,7 @@
 .section {
   z-index: 5;
   position: relative;
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex: auto;  
 }
 
 .title {
@@ -38,11 +35,13 @@
 @media screen and (min-width: 768px) {
   .section {
     padding: 0 var(--gl-indent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
-  .decorWrap {
-    /* width: 46%; */    
-    height: 70vh;
+  .decorWrap {      
+    height: 68.4vh;
     top: 6%;
     right: -1%;
 
@@ -56,17 +55,17 @@
   
 
   .title:not(:last-child) {
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.4rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {  
   .content:not(:last-child) {
     margin-bottom: 1rem;
   }
 
   .section {
-    padding: 15.4rem var(--gl-indent) 0;
+    padding: 2rem var(--gl-indent) 0;
   }
 
   .title:not(:last-child) {
@@ -94,23 +93,25 @@
 @media screen and (min-width: 1024px) {
   .content {
     padding-top: 13.8rem;
-    /* width: 54%; */
-    width: 51%;
+    width: 55%;
+    
   }
 
   .decorWrap {
-    width: 49%;
+    width: 45%;
   }
 
   .title {
     font-size: 5rem;
     line-height: 1;
+    letter-spacing: -0.01em;
   }
 
   .description {
+    margin-right: -18%;
     font-size: 3rem;
     line-height: 1.33;
-    margin-right: -18%;
+    letter-spacing: -0.003em;
   }
 }
 

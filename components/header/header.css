@@ -1,6 +1,6 @@
-.header {    
-    padding: 2rem var(--gl-indent);
-    width: 100%;    
+.header__logo {
+    z-index: 1;
+    position: relative;
 }
 
 .header__logo_img {
@@ -27,6 +27,15 @@
         position: fixed;
         left: 0;
         top: 0;
+        padding: 2.4rem var(--gl-indent);  
+        width: 100%;      
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {    
+        padding: 3.4rem var(--gl-indent);
+        width: 100%;    
     }
 }
 

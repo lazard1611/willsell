@@ -17,7 +17,7 @@ export default function Home() {
           <div className={styles.decorWrap}>
             <Image
                 className={styles.decor}
-                src="/apple.png"
+                src="/apple.webp"
                 alt="Apple"
                 width={400}
                 height={400}

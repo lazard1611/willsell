@@ -17,7 +17,7 @@ const Footer = () => {
                         <ul className={styles.footerList}>
                             <li className={styles.footerItem}>
                                 <a
-                                    href="#"
+                                    href="mailto:your@willsell.agency"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={styles.footerLink}
@@ -28,7 +28,7 @@ const Footer = () => {
 
                             <li className={styles.footerItem}>
                                 <a
-                                    href="#"
+                                    href="tel:+48696385345"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={styles.footerLink}
